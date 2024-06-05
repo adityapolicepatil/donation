@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donatory</title>
+    <link rel="stylesheet" href="clothesstyle.css">
+</head>
+<body>
+    <nav class="navbar">
+        <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+        <div class="navbar-brand" href="home.html">Donatory</div>
+        <ul class="navbar-menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="home.html#about">About</a></li>
+            <li><a href="home.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="mySidebar" class="sidebar">
+        <ul class="sidebar-menu">
+            <li><a href="food.html">Food donation</a></li>
+            <li><a href="clothes.html">Clothes donation</a></li>
+            <li><a href="blood.html">Blood donation</a></li>
+            <li><a href="#">Category 4</a></li>
+        </ul>
+    </div>
+
+    <div id="main" class="main-content">
+        <h1>Clothes</h1>
+        <p>Welcome to Donatory, where we help connect people to donate and make a difference.</p>
+    </div>
+</body>
+
+<script>
+    function toggleSidebar() {
+        var sidebar = document.getElementById("mySidebar");
+        var mainContent = document.getElementById("main");
+
+        if (sidebar.style.width === "250px") {
+            sidebar.style.width = "0";
+            mainContent.style.marginLeft = "0";
+        } else {
+            sidebar.style.width = "250px";
+            mainContent.style.marginLeft = "250px";
+        }
+    }
+</script>
+</html>

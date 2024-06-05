@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donatory</title>
+    <link rel="stylesheet" href="bloodstyle.css">
+</head>
+<body>
+    <nav class="navbar">
+        <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+        <div class="navbar-brand" href="home.html">Donatory</div>
+        <ul class="navbar-menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="home.html#about">About</a></li>
+            <li><a href="home.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="mySidebar" class="sidebar">
+        <ul class="sidebar-menu">
+            <li><a href="food.html">Food donation</a></li>
+            <li><a href="clothes.html">Clothes donation</a></li>
+            <li><a href="blood.html">Blood donation</a></li>
+            <li><a href="#">Category 4</a></li>
+        </ul>
+    </div>
+
+    <div id="main" class="main-content">
+        <h1>Blood</h1>
+        <p>Welcome to Donatory, where we help connect people to donate and make a difference.</p>
+        <section id = "whyblood" class = "whybloodclass">
+            <p><h3>Why Donate?</h3>
+                Every <strong>two seconds</strong>, someone in the world needs blood. Blood transfusions are critical for a variety of medical situations, including:
+                <br><br>
+                <li>Accident and trauma victims </li>
+                <li>Cancer patients undergoing treatment</li>
+                <li>Individuals undergoing surgery</li>
+                <li>People with chronic illnesses like sickle cell disease</li>
+                Blood cannot be manufactured and has a short shelf life.  Donated blood is essential to ensure a constant supply for those in need. A single blood donation can be separated into its components (red blood cells, plasma, platelets) and used to help multiple people.<br>
+                <br>
+                <h3>Who Can Donate?</h3>
+                <h4>Most healthy adults can donate blood. Here's a general overview of eligibility criteria:</h4> 
+                <li>Age: Typically between 17-75 years old (age may vary slightly by location)</li>
+                <li>Weight: Minimum weight requirement 45 kilograms</li>
+                <li>Health: Generally healthy with no recent illnesses or infections</li>
+                <li>Medications: Some medications may temporarily disqualify you</li>
+                Not sure if you're eligible? Take our quick and easy online quiz to find out: <a href="https://www.lifeblood.com.au/blood/eligibility/quiz" target="_blank">Australian Red Cross Quiz</a></p>
+        </section>
+    </div>
+</body>
+
+<script>
+    function toggleSidebar() {
+        var sidebar = document.getElementById("mySidebar");
+        var mainContent = document.getElementById("main");
+
+        if (sidebar.style.width === "250px") {
+            sidebar.style.width = "0";
+            mainContent.style.marginLeft = "0";
+        } else {
+            sidebar.style.width = "250px";
+            mainContent.style.marginLeft = "250px";
+        }
+    }
+</script>
+</html>

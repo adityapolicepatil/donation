@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donatory</title>
+    <link rel="stylesheet" href="homestyle.css">
+</head>
+<body>
+    <nav class="navbar">
+        <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+        <div class="navbar-brand" href="home.html">Donatory</div>
+        <ul class="navbar-menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="home.html#about">About</a></li>
+            <li><a href="home.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="mySidebar" class="sidebar">
+        <ul class="sidebar-menu">
+            <li><a href="food.html">Food donation</a></li>
+            <li><a href="clothes.html">Clothes donation</a></li>
+            <li><a href="blood.html">Blood donation</a></li>
+            <li><a href="#">Category 4</a></li>
+        </ul>
+    </div>
+
+    <div id="main" class="main-content">
+        <h1>Food</h1>
+        <p>Welcome to Donatory, where we help connect people to donate and make a difference.</p><br>
+        <section id = "whyfood" class = "whyfoodclass">
+            <h3>Why donate food?</h3>
+            <li>Reduces Food Waste: A significant portion of edible food gets wasted globally. Donating food helps prevent usable food from reaching landfills and reduces environmental impact.</li>
+            <li>Supports Food Banks and Pantries: Food banks and pantries rely on donations to provide vital meals to those in need. Your contribution can directly reach families and individuals facing hunger.</li>
+            <li>Promotes Community Support: Food donation fosters a sense of community and social responsibility. By donating, you join a network that helps neighbors facing food insecurity.</li>
+            <li>Combats Hunger: Food insecurity is a serious issue with far-reaching consequences. Donating food helps ensure people have access to nutritious meals, promoting overall health and well-being.</li><br>
+            <h3>Who Can Donate Food?</h3>
+
+            <p>Many individuals and businesses can participate in food donation! Here's how you can get involved:</p><br>
+
+            <p><b>Individuals:</b></p>
+            <p>Donate unopened, non-perishable food items to your local food bank or pantry.</p>
+            <p>Consider donating fresh produce from your garden or organizing a community food drive.</p>
+            <p>Leftovers from restaurants or large gatherings can be donated if properly packaged and within safety guidelines.</p>
+            <p><b>Businesses:</b></p>
+            <p>Restaurants, grocery stores, and other food-related businesses can donate surplus food or food that is nearing its expiration date.</p>
+            <p><b>If you wish to donate, then for better efficiency:</b></p>
+            <p>Partner with food banks or organizations specializing in food rescue to ensure safe and efficient food handling.</p><br>
+        </section>
+    </div>
+</body>
+
+<script>
+    function toggleSidebar() {
+        var sidebar = document.getElementById("mySidebar");
+        var mainContent = document.getElementById("main");
+
+        if (sidebar.style.width === "250px") {
+            sidebar.style.width = "0";
+            mainContent.style.marginLeft = "0";
+        } else {
+            sidebar.style.width = "250px";
+            mainContent.style.marginLeft = "250px";
+        }
+    }
+</script>
+</html>
